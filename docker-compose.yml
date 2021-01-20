@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  openresty:
+    build: . 
+    ports: 
+      - 80:80
+    volumes:
+      - ./bootstrap.sh:/usr/local/openresty/bootstrap.sh
+    
